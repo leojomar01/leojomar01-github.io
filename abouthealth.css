@@ -1,0 +1,15 @@
+main{   
+    padding: 10px 100px ;
+}
+main dd{
+    text-indent: 50px;
+}
+
+/* set the image size in main  */
+main img{
+    width: 300px;
+    height: auto;
+}
+.rightimg{
+    float: right;
+}

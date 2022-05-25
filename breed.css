@@ -1,0 +1,93 @@
+*{
+    /* border: 1px solid; */
+}
+main{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+/* nav, header{
+    position: relative;
+    top: auto;
+} */
+
+.sidenav{
+    border-radius:5px;
+    top: 0;
+    position: sticky;
+    background-color: #ffffff;
+    box-shadow: 5px 5px;
+    padding: 10px;
+}
+.sidenav a{
+    color: black;
+}
+
+.rightpage{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+/* sets the flip card size and style */
+.flipcards{
+    height: auto;
+    width: 500px;
+    background-color: transparent;
+    margin:50px;
+    border-radius: 5px;
+}
+/* set the image inside flip card to this size and style */
+.flipcards img{
+    width: 500px;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid;
+}
+.flipcardfront h3{
+    background-color: white;
+    border: 1px solid;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    right: 10%;
+}
+.innerimg img{
+    float: left;
+    width: 300px;
+    height: auto;
+}
+
+.flipcardinner {
+    position: relative;
+    text-align: center;
+    width: 500px;
+    height: 250px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+/* set flip card front and back at same position */
+.flipcardfront, .flipcardback {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+/* set flip card back  */
+.flipcardback {
+    transform: rotateY(180deg);
+    height: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    border: 5px black double;
+    background-color: #ffffff;
+}
+
+
+/* flip card hover effect */
+.flipcards:hover .flipcardinner {
+    transform: rotateY(180deg);
+}
