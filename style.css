@@ -5,6 +5,10 @@
 }
 
 
+body{
+    background-image: linear-gradient(rgb(255, 255, 255),rgb(209, 209, 208),white);
+}
+
 /* positioning the item using Grid template */
 .main-div{
     display: grid;
@@ -31,7 +35,7 @@ header{
     background-color: #000000;
     position: sticky;
     top: 0;
-    z-index:1
+    z-index:5
 }
 header a{
     height: 100%;
