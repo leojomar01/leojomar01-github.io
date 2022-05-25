@@ -16,7 +16,6 @@
     grid-template-rows:90px 1fr 20vh;
     height: auto;
 }
-
 /* all image will fit in their container */
 img{
     height: 100%;
