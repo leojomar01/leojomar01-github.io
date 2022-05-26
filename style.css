@@ -4,13 +4,6 @@
     font-size: 2.5vh;
     /* border: 1px solid black; */
 }
-
-.search-bar{
-    display: flex;
-    height: 6vh;
-}
-
-
 body{
     background-image: linear-gradient(rgb(255, 255, 255),rgb(209, 209, 208),white);
 }
@@ -24,7 +17,6 @@ body{
     "footer footer";
     grid-template-columns:1fr 4fr;
     grid-template-rows:15vh 1fr 13vh;
-    height: auto;
 }
 /* all image will fit in their container */
 img{
@@ -67,26 +59,20 @@ nav{
     top: 0;
     z-index:2
 }
-
 .btn-group{
     grid-area: btn-group;
-    padding-bottom: 1rem;
+    padding-bottom: .5rem;
 }
 .search-bar{
     grid-area: search-bar; 
+    display: flex;
+    height: 60%;
 }
-
-
-
-
-
 
 
 
 main{
     grid-area: main;   
-    /* background-image: url(images/bg.jpg); */
-    background-size: 100vh;
 }
 
 
