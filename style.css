@@ -5,6 +5,11 @@
     /* border: 1px solid black; */
 }
 
+.search-bar{
+    display: flex;
+    height: 6vh;
+}
+
 
 body{
     background-image: linear-gradient(rgb(255, 255, 255),rgb(209, 209, 208),white);
