@@ -4,21 +4,29 @@
 
 .breedsearch{
     display: flex;
-    height: 45vh;
+    height: 35vh;
+    width: 100vw;
     align-items: center;
     justify-content: center;
     background-image: url(images/searchbg.jpg);
-    background-size: 33% 45vh;
+    background-size: 100% 100%;
     opacity: 0.9;
 }
-form button{
-    border: .1rem solid;
+form{
+    display: flex;
 }
 
-.rightpage{
+main{
     display: grid;
-    grid-template-columns: 1fr 1fr;
     justify-content: center;
+}
+
+.breedlist{
+    display: grid;
+    width: 90vw;
+    margin: 0 5vw 0 5vw;
+    grid-template-columns: 1fr 1fr;
+    /* border: 1px solid; */
 }
 
 /* sets the flip card size and style */
@@ -26,7 +34,7 @@ form button{
     height: auto;
     width: 40vw;
     background-color: transparent;
-    margin:1rem 2rem 1rem 2rem;
+    margin:2rem 2rem 3rem 2rem;
     border-radius: 5%;
 }
 /* set the image inside flip card to this size and style */
@@ -47,18 +55,14 @@ form button{
     left: 10%;
     right: 10%;
 }
-.innerimg img{
-    float: left;
-    width: 100%;
-    height: auto;
-}
+
 
 .flipcardinner {
     position: relative;
     text-align: center;
     width: auto;
     height: 40vh;
-    transition: transform 1s;
+    transition: transform .8s;
     transform-style: preserve-3d;
 }
 
@@ -72,7 +76,7 @@ form button{
 .flipcardback {
     transform: rotateY(180deg);
     height: 100%;
-    padding: 3rem;
+    padding: 1rem;
     border-radius: 5%;
     border: .5rem black double;
     background-color: #ffffff;

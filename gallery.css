@@ -1,13 +1,15 @@
 main{
-    display: grid;
+    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+
 }
 
 .photo p{
     position: absolute;
     z-index: 1;
-    bottom: 0;
-    left: 2rem;
+    bottom: -.2rem;
+    left: 1rem;
     visibility: hidden;
     transition: .2s;
     color: rgb(255, 255, 255);
@@ -23,7 +25,7 @@ main{
     width: 20vw;
     height: auto;
     margin-top: 1rem;
-    filter:grayscale(50%);
+    filter:grayscale(70%);
     transition: .3s;
 }
 .btm div{
@@ -32,6 +34,6 @@ main{
 .top div:hover p, .btm div:hover p ,.top div:hover, .btm div:hover{
     filter: grayscale(0%);
     cursor: pointer;
-    transform:scale(1.2);
+    transform:scale(1.1);
     visibility: visible;
 }

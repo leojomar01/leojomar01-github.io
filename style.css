@@ -36,8 +36,6 @@ img{
 header{
     grid-area: header;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
     background-color: #000000;
     position: sticky;
     top: 0;
@@ -48,6 +46,9 @@ header a{
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
+header h1{
+    margin-top:  1rem;
+}
 header a:hover{
     color: rgb(255, 255, 255);
 }
@@ -57,7 +58,6 @@ nav{
     grid-area: nav;
     display: grid;
     background-color: #000000;
-    border-bottom-right-radius:  1rem;
     grid-template-areas: 
     ". ."
     "btn-group search-bar";
@@ -65,7 +65,7 @@ nav{
     grid-template-columns: 3fr 2fr;
     position: sticky;
     top: 0;
-    z-index:1
+    z-index:2
 }
 
 .btn-group{
