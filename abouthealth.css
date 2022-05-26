@@ -1,13 +1,13 @@
 main{   
-    padding: 10px 100px ;
+    padding: 1rem 5rem ;
 }
 main dd{
-    text-indent: 50px;
+    text-indent: 5rem;
 }
 
 /* set the image size in main  */
 main img{
-    width: 300px;
+    width: 25vw;
     height: auto;
 }
 .rightimg{
