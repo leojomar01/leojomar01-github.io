@@ -29,9 +29,7 @@ main{
 }
 /* sets the flip card size and style */
 .flipcards{
-    height: 40vh;
-    width: 40vw;
-    margin:2rem 2rem 3rem 2rem;
+    margin:2rem;
 }
 .flipcardinner {
     text-align: center;
@@ -44,8 +42,8 @@ main{
 .flipcards img{
     width: 100%;
     height: auto;
-    border-radius:5%;
-    border: .1rem solid black;
+    border-radius:1%;
+    border: .5rem outset ;
 }
 .flipcardfront h3{
     background-color: white;
@@ -67,8 +65,8 @@ main{
     height: 100%;
     width: auto;
     padding: 1rem;
-    border-radius: 5%;
-    border: .5rem black double;
+    border-radius: 1%;
+    border: .5rem  ridge;
     background-color: #ffffff;
 }
 /* flip card hover effect */

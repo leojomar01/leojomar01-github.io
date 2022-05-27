@@ -2,6 +2,7 @@ main{
     display: flex;
     justify-content: center;
 }
+/* text inside image */
 .photo p{
     position: absolute;
     z-index: 2;
@@ -11,8 +12,8 @@ main{
     transition: .2s;
     color: rgb(255, 255, 255);
 }
+/* pictures */
 .top,.btm {
-    margin-bottom: 1rem;
     display: flex;
     width: 90vw;
     justify-content: space-around;
@@ -29,16 +30,22 @@ main{
 .top div{
     width: 20vw;
 }
-.top div:hover p, .btm div:hover p ,.top div:hover, .btm div:hover{
+/* image hover effect */
+.top div:hover, .btm div:hover{
     filter: grayscale(0%);
     cursor: pointer;
     transform:scale(1.1);
+}
+.top div:hover p, .btm div:hover p {
     visibility: visible;
 }
+
+
+/* modal  */
 .photomodal img{
     width: 60vw;
     border: white .5rem solid;
-    border-radius: 3%;
+    border-radius: 1%;
 }
 .modal {
     margin-left: -10%;
