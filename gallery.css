@@ -45,7 +45,7 @@ main{
 .photomodal img{
     width: 60vw;
     border: white .5rem solid;
-    border-radius: 1%;
+    border-radius: 1rem;
 }
 .modal {
     margin-left: -10%;

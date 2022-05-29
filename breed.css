@@ -42,8 +42,8 @@ main{
 .flipcards img{
     width: 100%;
     height: auto;
-    border-radius:1%;
-    border: .5rem outset ;
+    border-radius:1rem;
+    border: .2rem solid ;
 }
 .flipcardfront h3{
     background-color: white;
@@ -65,8 +65,8 @@ main{
     height: 100%;
     width: auto;
     padding: 1rem;
-    border-radius: 1%;
-    border: .5rem  ridge;
+    border-radius: 1rem;
+    border: .5rem  double;
     background-color: #ffffff;
 }
 /* flip card hover effect */
