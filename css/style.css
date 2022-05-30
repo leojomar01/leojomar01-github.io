@@ -85,7 +85,10 @@ footer{
     bottom: 0;
     height: 20vh;
 }
-footer a, footer p{
+footer div{
+    display: flex;
+}
+footer a{
     margin: 1rem;
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -93,25 +96,29 @@ footer a, footer p{
 
 @media screen and (max-width:480px) {
 
-    .main div{
+    *{
+        font-size: 1.5vh;
+    }
+    .main-div{
         grid-template-areas: 
     "header"
     "nav"
     "main "
     "footer ";
-    grid-template-columns: 1fr;
-    grid-template-rows:100px 100px 5fr 20vh;
+    grid-template-columns: 100%;
+    grid-template-rows:10vh 8vh 1fr 10vh;
     
     }
-    main{
-        background-color: red;
+    footer div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
-    header, nav{
-        top: auto;
-        position: inherit;
-        
+    footer a, footer p{
+        margin: .5rem;
     }
-    
+    nav{
+        top: 10vh;
+    }
 }
 
 

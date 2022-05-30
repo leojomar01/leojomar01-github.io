@@ -21,6 +21,7 @@ main{
 .top div, .btm div{
     height: auto;
     margin-top: 1rem;
+    margin-bottom: 1rem;
     filter:grayscale(70%);
     transition: .3s;
 }
@@ -50,3 +51,23 @@ main{
 .modal {
     margin-left: -10%;
  }
+
+
+
+@media screen and (max-width:480px) {
+  
+    .top{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .top div{
+        width: 43vw;
+    }
+    .modal {
+        margin-left: 5%;
+        margin-top: 25%;
+    }
+    .photomodal img{
+        width: 90vw;
+    }
+}

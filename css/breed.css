@@ -73,3 +73,22 @@ main{
 .flipcards:hover .flipcardinner {
     transform: rotateY(180deg);
 }
+
+
+
+
+
+
+
+@media screen and (max-width:480px) {
+
+   
+    .breedlist{
+        grid-template-columns: 1fr;
+    }
+    .flipcardinner {
+        height: 32vh;
+    }
+   
+    
+}

@@ -83,3 +83,26 @@
 .topic p{
     margin-left: 1rem;
 }
+
+@media screen and (max-width:480px) {
+    .story{
+        display: grid;
+        grid-template-areas: 
+        "carousel"
+        "list";
+        grid-template-columns:1fr   ;
+    }
+    .carousel{
+        margin: 2rem;
+        width: 90%;
+    }
+    .list{
+        grid-area: list;
+        display: flex;
+    }
+   
+    .topic img{
+        height: auto;
+    }
+    
+}
